@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+
+.NavBar{
+    font-family: Arapey;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.Menu {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+    width : 60px;
+	height : 60px;
+}
+
+.Menu:hover{
+    cursor: pointer;
+}
+
+.Sections{
+    position: absolute;
+    background-color: red;
+    list-style: none;
+}
