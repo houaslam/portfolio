@@ -1,0 +1,27 @@
+@import url('./App.css');
+
+
+.sideBar{
+    grid-column: 4/-1;
+	grid-row: 1/-1;
+	/* background-color: green; */
+    border: 1px solid var(--text);
+    border-radius: 30px;
+    background-color: rgb(217, 217, 217, .05);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px auto;
+
+}
+
+.Menu{
+    height: 60;
+    width: 60;
+    grid-column: 5;
+    align-self: center;
+    justify-self: center;
+}
+
+.Sections{
+    list-style: none;
+}

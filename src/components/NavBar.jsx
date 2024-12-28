@@ -1,23 +1,28 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import '../styles/NavBar.css'
-import Menu from './Menu';
-import NAVBAR from '../constant/Images';
+// import NAVBAR from '../constant/Images';
 
-function NavBar(  ){
-	const [isMenuOpen, setIsMenuOpen] = useState(  )
-	useEffect( (  )=>{
-		setIsMenuOpen( false )
-	}, [] )
-	const handleClick = ( ) =>{
-		console.log( "yay" )
-		setIsMenuOpen( prev=>!prev )
-	}
-
+function NavBar( props ){
 	return(
-		<nav className="NavBar">
-			<a className='logo' href='#'>HajarOuaslam</a>
-			<Menu onClick={handleClick} isOpen={isMenuOpen}/>
-		</nav>
+		<ul className='NavBar'>
+			<li ><a className='Sections' href='#'> Home</a></li>
+			<li ><a className='Sections' href='#'> Projects</a></li>
+			<li className='logo'><a className='Sections' href='#'>Hajar.</a></li>
+			<li><a className='Sections' href='#'>About</a></li>
+			<li><a className='Sections' href='#'>Contact</a></li>
+				
+			</ul>
+		// <nav className="NavBar">
+			
+			/* <img 
+				className="Menu"
+				onClick={props.onClick}
+				width="60" 
+				height="60" 
+				src={ props.menuState ? NAVBAR.openMenu : NAVBAR.closedMenu} 
+				alt="multiply--v1"
+			/> */
+		// </nav>
 	)
 }
 
