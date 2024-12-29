@@ -1,28 +1,17 @@
-// import { useEffect, useState } from 'react';
+import { Link } from 'react-router';
 import '../styles/NavBar.css'
-// import NAVBAR from '../constant/Images';
 
 function NavBar( props ){
 	return(
 		<ul className='NavBar'>
-			<li ><a className='Sections' href='#'> Home</a></li>
-			<li ><a className='Sections' href='#'> Projects</a></li>
-			<li className='logo'><a className='Sections' href='#'>Hajar.</a></li>
-			<li><a className='Sections' href='#'>About</a></li>
-			<li><a className='Sections' href='#'>Contact</a></li>
+
+			<li ><Link className='Sections' to={"/"}> Home</Link></li>
+			<li ><Link className='Sections' to={"/projects"}> Projects</Link></li>
+			<li className='logo'><Link className='Sections' to={"/"}>Hajar.</Link></li>
+			<li><Link className='Sections' to={"/about"}>About</Link></li>
+			<li><Link className='Sections' to={"/contact"}>Contact</Link></li>
 				
-			</ul>
-		// <nav className="NavBar">
-			
-			/* <img 
-				className="Menu"
-				onClick={props.onClick}
-				width="60" 
-				height="60" 
-				src={ props.menuState ? NAVBAR.openMenu : NAVBAR.closedMenu} 
-				alt="multiply--v1"
-			/> */
-		// </nav>
+		</ul>
 	)
 }
 

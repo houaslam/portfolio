@@ -1,6 +1,6 @@
 import '../styles/Main.css'
 
-function Home( ){
+export function Home( ){
     return (
     <main>
         <h1 className='header'>Hello, my name is</h1>
@@ -20,4 +20,15 @@ function Home( ){
     )
 }
 
-export default Home
+
+export function About(  ){
+    return <main><h1>About</h1></main>
+}
+
+export function Projects(  ){
+    return <main><h1>Projects</h1></main>
+}
+
+export function Contact(  ){
+    return <main><h1>Contact</h1></main>
+}
